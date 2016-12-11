@@ -35,7 +35,7 @@ public class AddActivity extends AppCompatActivity {
 
 
                 if (titleText.equals("")) {
-                    Toast.makeText(AddActivity.this, "名字为空,请完善", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddActivity.this, "任务名为空,请完善", Toast.LENGTH_SHORT).show();
                 } else {
                     if (myDB.isExists(titleText)) {
                         Toast.makeText(AddActivity.this, "此任务已经存在", Toast.LENGTH_SHORT).show();

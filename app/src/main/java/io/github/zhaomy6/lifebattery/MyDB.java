@@ -5,13 +5,16 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
+import static android.content.ContentValues.TAG;
 
 /**
  * Created by zhangsht on 2016/12/10.
  */
 
 public class MyDB extends SQLiteOpenHelper {
-    private static final String DB_Name = "PlanStore";
+    private static final String DB_Name = "PlanStores";
     private static final String Table_Name = "Plans2";
     private static final int DB_Version = 1;
 
@@ -78,6 +81,18 @@ public class MyDB extends SQLiteOpenHelper {
         cursor.close();
         db.close();
         return ans;
+    }
+
+    public Cursor getWithTitle(String title) {
+        SQLiteDatabase db = getWritableDatabase();
+        String[] colums = {"_id", "title", "DDL", "progress", "detail"};
+        String whereClause = "title=?";
+        String[] whereArgs = {title};
+        Cursor cursor = db.query(Table_Name, colums, whereClause, whereArgs, null, null, null);
+        if (cursor.getCount() > 0) {
+            Log.i(TAG, "getWithTitle: count");
+        }
+        return cursor;
     }
 
     public Cursor queryDB(String title) {
