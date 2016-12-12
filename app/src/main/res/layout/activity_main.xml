@@ -17,9 +17,13 @@
         <!--android:layout_gravity="center"-->
         <!--android:gravity="center"-->
         <!--android:padding="10dp" />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorAccent"
+        android:elevation="2dp"/>
     <TextView
         android:id="@+id/m_planTitle"
-        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
