@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--电池仓页面，存有一些想要实现但未确定什么时候实现的计划-->
+    <!--包括一些理想性的东西和临时记下的灵感-->
+</LinearLayout>
