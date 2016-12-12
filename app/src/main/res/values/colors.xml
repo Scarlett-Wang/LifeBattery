@@ -7,5 +7,8 @@
     <color name="colorAccentLight">#C9CAE9</color>
     <color name="colorAccentDark">#5C6BC0</color>
 
+    <color name="colorDarkBackground">#252629</color>
     <color name="colorWhiteLilac">#E9E9E9</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDiv">#12000000</color>
 </resources>
