@@ -60,7 +60,6 @@
             android:layout_marginEnd="@dimen/m_margin"
             android:background="@color/colorWhite"
             android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
             android:textSize="@dimen/font_big"
             android:text="Android 大作业"/>
 
@@ -84,7 +83,6 @@
             android:layout_marginEnd="@dimen/m_margin"
             android:background="@color/colorWhite"
             android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
             android:textSize="@dimen/font_big"
             android:text="2016-12-14"/>
 
@@ -109,7 +107,6 @@
             android:layout_marginEnd="@dimen/m_margin"
             android:background="@color/colorWhite"
             android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
             android:textSize="@dimen/font_big"
             android:text="剩余  2  天"/>
 
