@@ -35,13 +35,4 @@
         android:layout_weight="1"
         android:layout_gravity="center_vertical"
         android:src="@drawable/arrow_small"/>
-    <!--<TextView-->
-        <!--android:id="@+id/planProgress"-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="0dp" />-->
-    <!--<TextView-->
-        <!--android:id="@+id/planDetail"-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="0dp" />-->
-
 </LinearLayout>
