@@ -1,17 +1,27 @@
 package io.github.zhaomy6.lifebattery;
 
-import android.database.Cursor;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private MyDB myDB;
     private TextView title, DDL, progress;
+    private Button planBotton, storeBotton, summaryButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.m_plan_button).setOnClickListener(this);
+        findViewById(R.id.m_store_button).setOnClickListener(this);
+        findViewById(R.id.m_summary_button).setOnClickListener(this);
+//        storeBotton= (Button) findViewById(R.id.m_store_button);
+//        summaryButton = (Button) findViewById(R.id.m_summary_button);
 //        myDB = new MyDB(this);
 //
 //        title = (TextView)findViewById(R.id.m_plan_title);
@@ -31,5 +41,25 @@ public class MainActivity extends AppCompatActivity {
 //        title.setText(titleContent);
 //        DDL.setText(DDLContent);
 //        progress.setText(progressContent);
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, MainActivity.class);
+        switch (view.getId()) {
+            case R.id.m_plan_button:
+                intent.setClass(MainActivity.this, PlansActivity.class);
+                break;
+            case R.id.m_store_button:
+                intent.setClass(MainActivity.this, PlansActivity.class);
+                break;
+            case R.id.m_summary_button:
+                intent.setClass(MainActivity.this, StatisticsActivity.class);
+                break;
+            default:
+                break;
+        }
+        startActivity(intent);
     }
 }

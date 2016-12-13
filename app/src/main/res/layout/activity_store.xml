@@ -4,15 +4,6 @@
     android:layout_height="match_parent">
     <!--电池仓页面，存有一些想要实现但未确定什么时候实现的计划-->
     <!--包括一些理想性的东西和临时记下的灵感-->
-    <ListView
-        android:id="@+id/store_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/p_list_margin"
-        android:layout_marginEnd="@dimen/p_list_margin"
-        android:layout_above="@id/store_add_btn">
-    </ListView>
-
     <Button
         android:id="@+id/store_add_btn"
         android:layout_width="match_parent"
@@ -26,5 +17,13 @@
         android:textColor="@color/colorDarkBackground"
         android:textSize="@dimen/font_normal"
         android:text="add"/>
+    <ListView
+        android:id="@+id/store_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/p_list_margin"
+        android:layout_marginEnd="@dimen/p_list_margin"
+        android:layout_above="@id/store_add_btn">
+    </ListView>
 
 </RelativeLayout>
