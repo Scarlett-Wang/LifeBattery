@@ -6,6 +6,7 @@
     android:id="@+id/activity_plans"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhiteLilac"
     tools:context="io.github.zhaomy6.lifebattery.PlansActivity">
 
     <android.support.v7.widget.Toolbar
@@ -21,16 +22,8 @@
         android:layout_below="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="@dimen/p_list_margin"
         android:layout_marginEnd="@dimen/p_list_margin">
     </ListView>
-
-    <!--<ImageView-->
-        <!--android:id="@+id/add"-->
-        <!--android:layout_width="50dp"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:layout_marginEnd="30dp"-->
-        <!--android:src="@drawable/add_btn"/>-->
 </RelativeLayout>

@@ -32,8 +32,6 @@ public class AddActivity extends AppCompatActivity {
                 String DDLText = DDL.getText().toString();
                 String progressText = progress.getText().toString();
                 String detailText = detail.getText().toString();
-
-
                 if (titleText.equals("")) {
                     Toast.makeText(AddActivity.this, "任务名为空,请完善", Toast.LENGTH_SHORT).show();
                 } else {
@@ -41,9 +39,6 @@ public class AddActivity extends AppCompatActivity {
                         Toast.makeText(AddActivity.this, "此任务已经存在", Toast.LENGTH_SHORT).show();
                     } else {
                         myDB.insert2DB(titleText, DDLText, progressText, detailText);
-                        Intent intent = new Intent();
-                        intent.setClass(AddActivity.this, PlansActivity.class);
-                        startActivity(intent);
                         finish();
                     }
                 }
