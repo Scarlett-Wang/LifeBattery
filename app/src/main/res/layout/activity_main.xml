@@ -56,10 +56,11 @@
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             android:paddingStart="30dp"
+            android:paddingEnd="30dp"
             android:layout_marginStart="@dimen/m_margin"
             android:layout_marginEnd="@dimen/m_margin"
             android:background="@color/colorWhite"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorDarkBackground"
             android:textSize="@dimen/font_big"
             android:text="Android 大作业"/>
 
@@ -79,10 +80,11 @@
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             android:paddingStart="30dp"
+            android:paddingEnd="30dp"
             android:layout_marginStart="@dimen/m_margin"
             android:layout_marginEnd="@dimen/m_margin"
             android:background="@color/colorWhite"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorDarkBackground"
             android:textSize="@dimen/font_big"
             android:text="2016-12-14"/>
 
@@ -102,11 +104,12 @@
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             android:paddingStart="30dp"
+            android:paddingEnd="30dp"
             android:layout_below="@id/div2"
             android:layout_marginStart="@dimen/m_margin"
             android:layout_marginEnd="@dimen/m_margin"
             android:background="@color/colorWhite"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorDarkBackground"
             android:textSize="@dimen/font_big"
             android:text="剩余  2  天"/>
 

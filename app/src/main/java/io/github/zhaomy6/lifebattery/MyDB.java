@@ -73,10 +73,10 @@ public class MyDB extends SQLiteOpenHelper {
 
     public boolean isExists(String title) {
         SQLiteDatabase db = getWritableDatabase();
-        String[] colums = {"title"};
+        String[] columns = {"title"};
         String whereClause = "title=?";
         String[] whereArgs = {title};
-        Cursor cursor = db.query(Table_Name, colums, whereClause, whereArgs, null, null, null);
+        Cursor cursor = db.query(Table_Name, columns, whereClause, whereArgs, null, null, null);
         boolean ans = cursor.getCount() != 0;
         cursor.close();
         db.close();
@@ -105,16 +105,14 @@ public class MyDB extends SQLiteOpenHelper {
     public Cursor getAll() {
         SQLiteDatabase db = getWritableDatabase();
         String[] tableColumns = {"_id", "title", "DDL", "progress", "detail"};
-        Cursor c = db.query(Table_Name, tableColumns,
+        return db.query(Table_Name, tableColumns,
                 null, null, null, null, null);
-        return c;
     }
 
     public Cursor getPart() {
         SQLiteDatabase db = getWritableDatabase();
         String[] tableColumns = {"_id", "title", "DDL"};
-        Cursor c = db.query(Table_Name, tableColumns,
+        return db.query(Table_Name, tableColumns,
                 null, null, null, null, null);
-        return c;
     }
 }
