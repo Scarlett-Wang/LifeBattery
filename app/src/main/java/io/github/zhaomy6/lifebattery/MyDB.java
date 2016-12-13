@@ -5,13 +5,16 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
+import static android.content.ContentValues.TAG;
 
 /**
  * Created by zhangsht on 2016/12/10.
  */
 
 public class MyDB extends SQLiteOpenHelper {
-    private static final String DB_Name = "PlanStore";
+    private static final String DB_Name = "PlanStores";
     private static final String Table_Name = "Plans2";
     private static final int DB_Version = 1;
 
@@ -70,14 +73,26 @@ public class MyDB extends SQLiteOpenHelper {
 
     public boolean isExists(String title) {
         SQLiteDatabase db = getWritableDatabase();
-        String[] colums = {"title"};
+        String[] columns = {"title"};
         String whereClause = "title=?";
         String[] whereArgs = {title};
-        Cursor cursor = db.query(Table_Name, colums, whereClause, whereArgs, null, null, null);
+        Cursor cursor = db.query(Table_Name, columns, whereClause, whereArgs, null, null, null);
         boolean ans = cursor.getCount() != 0;
         cursor.close();
         db.close();
         return ans;
+    }
+
+    public Cursor getWithTitle(String title) {
+        SQLiteDatabase db = getWritableDatabase();
+        String[] colums = {"_id", "title", "DDL", "progress", "detail"};
+        String whereClause = "title=?";
+        String[] whereArgs = {title};
+        Cursor cursor = db.query(Table_Name, colums, whereClause, whereArgs, null, null, null);
+        if (cursor.getCount() > 0) {
+            Log.i(TAG, "getWithTitle: count");
+        }
+        return cursor;
     }
 
     public Cursor queryDB(String title) {
@@ -90,16 +105,14 @@ public class MyDB extends SQLiteOpenHelper {
     public Cursor getAll() {
         SQLiteDatabase db = getWritableDatabase();
         String[] tableColumns = {"_id", "title", "DDL", "progress", "detail"};
-        Cursor c = db.query(Table_Name, tableColumns,
+        return db.query(Table_Name, tableColumns,
                 null, null, null, null, null);
-        return c;
     }
 
     public Cursor getPart() {
         SQLiteDatabase db = getWritableDatabase();
         String[] tableColumns = {"_id", "title", "DDL"};
-        Cursor c = db.query(Table_Name, tableColumns,
+        return db.query(Table_Name, tableColumns,
                 null, null, null, null, null);
-        return c;
     }
 }

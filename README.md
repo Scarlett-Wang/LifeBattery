@@ -1,1 +1,3 @@
-Life Battery
+# Life Battery
+
+Android Final Project

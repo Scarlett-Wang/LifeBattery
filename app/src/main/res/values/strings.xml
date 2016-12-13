@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">LifeBattery</string>
+
+    <string name="m_plan_btn_str">规划</string>
+    <string name="m_store_btn_str">仓库</string>
+    <string name="m_summary_btn_str">统计</string>
+
+    <string name="store_add_btn">添加</string>
 </resources>
