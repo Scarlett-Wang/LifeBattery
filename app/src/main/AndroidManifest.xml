@@ -14,18 +14,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity android:name=".PlansActivity"
             android:theme="@style/Appbar">
         </activity>
         <activity android:name=".AddActivity"></activity>
         <activity android:name=".StatisticsActivity"></activity>
-=======
-        <activity android:name=".PlansActivity"/>
-        <activity android:name=".AddActivity"/>
         <activity android:name=".StoreActivity"/>
         <activity android:name=".StatisticsActivity"/>
->>>>>>> cc84a0ebccce4fab7085d71bc48ac4cea2f3b5a0
     </application>
 
 </manifest>

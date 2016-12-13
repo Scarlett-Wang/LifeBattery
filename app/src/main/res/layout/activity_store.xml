@@ -5,21 +5,6 @@
     android:orientation="vertical">
     <!--电池仓页面，存有一些想要实现但未确定什么时候实现的计划-->
     <!--包括一些理想性的东西和临时记下的灵感-->
-<<<<<<< HEAD
-=======
-
-    <ListView
-        android:id="@+id/store_list"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="@dimen/p_list_margin"
-        android:layout_marginEnd="@dimen/p_list_margin"
-        android:dividerHeight="2dp">
-    </ListView>
-
->>>>>>> cc84a0ebccce4fab7085d71bc48ac4cea2f3b5a0
     <Button
         android:id="@+id/store_add_btn"
         android:layout_width="match_parent"
@@ -32,7 +17,6 @@
         android:layout_marginBottom="10dp"
         android:textColor="@color/colorDarkBackground"
         android:textSize="@dimen/font_normal"
-<<<<<<< HEAD
         android:text="add"/>
     <ListView
         android:id="@+id/store_list"
@@ -42,8 +26,6 @@
         android:layout_marginEnd="@dimen/p_list_margin"
         android:layout_above="@id/store_add_btn">
     </ListView>
-=======
-        android:text="@string/store_add_btn"/>
->>>>>>> cc84a0ebccce4fab7085d71bc48ac4cea2f3b5a0
+
 
 </LinearLayout>
