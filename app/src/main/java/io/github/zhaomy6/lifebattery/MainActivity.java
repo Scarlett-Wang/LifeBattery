@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
     implements View.OnClickListener {
@@ -17,11 +18,13 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button toPlans = (Button) findViewById(R.id.m_plan_button);
+        toPlans.setOnClickListener(this);
         Button toStore = (Button) findViewById(R.id.m_store_button);
         toStore.setOnClickListener(this);
-
+        Button toStatistic = (Button) findViewById(R.id.m_summary_button);
+        toStatistic.setOnClickListener(this);
 //        myDB = new MyDB(this);
-//
 //        title = (TextView)findViewById(R.id.m_plan_title);
 //        DDL = (TextView)findViewById(R.id.m_plan_ddl);
 //        progress = (TextView)findViewById(R.id.m_plan_progress);
@@ -43,10 +46,22 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onClick(View view) {
+        Intent intent = null;
         switch (view.getId()) {
             case R.id.m_store_button:
-                Intent intent = new Intent(MainActivity.this, StoreActivity.class);
+                intent = new Intent(MainActivity.this, StoreActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.m_summary_button:
+                intent = new Intent(MainActivity.this, StatisticsActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.m_plan_button:
+                intent = new Intent(MainActivity.this, PlansActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                Toast.makeText(this, "点击逻辑未处理", Toast.LENGTH_SHORT).show();
         }
     }
 }

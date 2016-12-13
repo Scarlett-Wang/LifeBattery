@@ -16,7 +16,7 @@
         android:paddingBottom="35dp"
         android:paddingTop="35dp"
         android:gravity="center_vertical"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorDarkBackground"
         android:textSize="@dimen/font_normal"/>
 
     <TextView
@@ -27,7 +27,7 @@
         android:paddingBottom="35dp"
         android:paddingTop="35dp"
         android:gravity="center_vertical"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorDarkBackground"
         android:textSize="@dimen/font_normal"/>
 
     <ImageView
@@ -35,5 +35,5 @@
         android:layout_height="30dp"
         android:layout_weight="2"
         android:layout_gravity="center_vertical"
-        android:src="@drawable/arrow_small"/>
+        android:src="@drawable/arrow_small_alpha"/>
 </LinearLayout>
