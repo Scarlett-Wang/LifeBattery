@@ -29,6 +29,6 @@
         android:layout_marginBottom="10dp"
         android:textColor="@color/colorDarkBackground"
         android:textSize="@dimen/font_normal"
-        android:text="add"/>
+        android:text="@string/store_add_btn"/>
 
 </LinearLayout>
