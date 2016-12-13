@@ -6,12 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="io.github.zhaomy6.lifebattery.PlansActivity">
-  <android.support.v7.widget.Toolbar
-      android:id="@+id/toolBar"
-      android:layout_width="match_parent"
-      android:background="@color/colorPrimary"
-      android:layout_height="?attr/actionBarSize">
-  </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
     <ListView
         android:id="@+id/planList"
         android:layout_below="@+id/toolBar"
@@ -20,16 +22,13 @@
         android:layout_marginStart="@dimen/p_list_margin"
         android:layout_marginEnd="@dimen/p_list_margin">
     </ListView>
-<<<<<<< HEAD
-=======
 
-    <ImageView
-        android:id="@+id/add"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/add_btn"/>
->>>>>>> cc84a0ebccce4fab7085d71bc48ac4cea2f3b5a0
+    <!--<ImageView-->
+        <!--android:id="@+id/add"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginEnd="30dp"-->
+        <!--android:src="@drawable/add_btn"/>-->
 </RelativeLayout>
