@@ -7,8 +7,7 @@
     android:layout_height="wrap_content">
     <item android:id="@+id/addAction"
         android:title="添加"
-        android:orderInCategory="80"
         android:icon="@drawable/add_btn"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
 </menu>

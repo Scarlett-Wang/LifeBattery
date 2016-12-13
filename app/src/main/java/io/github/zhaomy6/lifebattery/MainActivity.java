@@ -18,16 +18,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        findViewById(R.id.m_plan_button).setOnClickListener(this);
-//        findViewById(R.id.m_store_button).setOnClickListener(this);
-//        findViewById(R.id.m_summary_button).setOnClickListener(this);
+        findViewById(R.id.m_plan_button).setOnClickListener(this);
+        findViewById(R.id.m_store_button).setOnClickListener(this);
+        findViewById(R.id.m_summary_button).setOnClickListener(this);
 
-        Button toPlans = (Button) findViewById(R.id.m_plan_button);
-        toPlans.setOnClickListener(this);
-        Button toStore = (Button) findViewById(R.id.m_store_button);
-        toStore.setOnClickListener(this);
-        Button toStatistic = (Button) findViewById(R.id.m_summary_button);
-        toStatistic.setOnClickListener(this);
+//        Button toPlans = (Button) findViewById(R.id.m_plan_button);
+//        toPlans.setOnClickListener(this);
+//        Button toStore = (Button) findViewById(R.id.m_store_button);
+//        toStore.setOnClickListener(this);
+//        Button toStatistic = (Button) findViewById(R.id.m_summary_button);
+//        toStatistic.setOnClickListener(this);
 //        myDB = new MyDB(this);
 //        title = (TextView)findViewById(R.id.m_plan_title);
 //        DDL = (TextView)findViewById(R.id.m_plan_ddl);

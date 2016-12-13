@@ -123,8 +123,6 @@ public class PlansActivity extends AppCompatActivity {
 
                 d_planTitle.setText(titleText);
                 d_planDDL.setText(DDLText);
-//                d_planProgress.setText(progressText);
-//                d_planDetail.setText(detailText);
                 builder.create().show();
             }
 
