@@ -73,7 +73,7 @@ public class PlansActivity extends AppCompatActivity {
                 final String DDLText = cursor.getString(cursor.getColumnIndex("DDL"));
                 d_planDDL.setText(DDLText);
 
-                Cursor cursor1 = myDB.getWithTitle(titleText.toString());
+                Cursor cursor1 = myDB.getWithTitle(titleText);
                 cursor1.moveToFirst();
 
                 final String progressText = cursor1.getString(cursor1.getColumnIndex("progress"));

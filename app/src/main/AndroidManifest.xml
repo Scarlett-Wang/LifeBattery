@@ -11,15 +11,13 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PlansActivity">
-        </activity>
-        <activity android:name=".AddActivity">
-
-        </activity>
+        <activity android:name=".PlansActivity"/>
+        <activity android:name=".AddActivity"/>
+        <activity android:name=".StoreActivity"/>
+        <activity android:name=".StatisticsActivity"/>
     </application>
 
 </manifest>
